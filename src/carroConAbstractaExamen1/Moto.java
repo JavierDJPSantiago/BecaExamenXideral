@@ -3,10 +3,7 @@ package carroConAbstractaExamen1;
 public class Moto extends Vehiculo {
 	
 	
-	public String nombre = "Moto";
-	int velocidad = 50;
-
-
+	
 	@Override
 	public String moverse() {
 		return "Me muevo por tierra";
@@ -25,12 +22,12 @@ public class Moto extends Vehiculo {
 	@Override
 	public String nombre() {
 		
-		return nombre;
+		return "Moto";
 	}
 
 	@Override
 	public int getVelocidad() {
-		return velocidad;
+		return 50;
 	}
 	
 	
@@ -39,7 +36,7 @@ public class Moto extends Vehiculo {
 	public int acelerar(int velocidad) {
 		int resultado = 0;
 		if(velocidad>0) {
-			resultado = this.velocidad + velocidad;
+			resultado = getVelocidad() + velocidad;
 		}
 		else {
 			System.out.println("Debe ser un número mayor a 0");

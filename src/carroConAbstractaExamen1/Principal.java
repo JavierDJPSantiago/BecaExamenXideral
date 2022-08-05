@@ -23,7 +23,7 @@ public class Principal {
 		aceleracion = cliente.nextInt();
 		cliente.close();
 		
-		//Llamada al metodo varios de la clase seleción
+		//Llamada al metodo varios de la clase selección
 		Vehiculo vehiculo = Seleccion.varios(numeroVehiculo);
 		
 		//Llamada al metodo datos

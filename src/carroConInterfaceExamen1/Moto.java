@@ -5,8 +5,6 @@ package carroConInterfaceExamen1;
 public class Moto implements Vehiculo {
 	
 	
-	public String nombre = "Moto";
-	int velocidad = 50;
 
 
 	@Override
@@ -27,12 +25,12 @@ public class Moto implements Vehiculo {
 	@Override
 	public String nombre() {
 		
-		return nombre;
+		return "Moto";
 	}
 
 	@Override
 	public int getVelocidad() {
-		return velocidad;
+		return 50;
 	}
 	
 	
@@ -41,7 +39,7 @@ public class Moto implements Vehiculo {
 	public int acelerar(int velocidad) {
 		int resultado = 0;
 		if(velocidad>0) {
-			resultado = this.velocidad + velocidad;
+			resultado = getVelocidad() + velocidad;
 		}
 		else {
 			System.out.println("Debe ser un número mayor a 0");

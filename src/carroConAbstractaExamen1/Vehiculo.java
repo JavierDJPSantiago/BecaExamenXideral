@@ -1,9 +1,7 @@
 package carroConAbstractaExamen1;
 
-//Clase abstracta que da herencia
 public abstract class Vehiculo {
 
-	//Metodos abstractos para herencia
 	abstract String moverse ();
 	
 	abstract int costo ();

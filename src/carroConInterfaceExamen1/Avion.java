@@ -2,10 +2,6 @@ package carroConInterfaceExamen1;
 
 public class Avion implements Vehiculo {
 	
-	public String nombre = "Avion";
-	int velocidad = 10000;
-
-	
 
 	@Override
 	public String moverse() {
@@ -25,19 +21,20 @@ public class Avion implements Vehiculo {
 	@Override
 	public String nombre() {
 		
-		return nombre;
+		return "Avion";
 	}
 
 	@Override
 	public int getVelocidad() {
-		return velocidad;
+		return 10000;
 	}
 	
+		//Metodo acelerar: contiene if para que solo sean valores positivos
 	@Override
 	public int acelerar(int velocidad) {
 		int resultado = 0;
 		if(velocidad>0) {
-			resultado = this.velocidad + velocidad;
+			resultado = getVelocidad() + velocidad;
 		}
 		else {
 			System.out.println("Debe ser un número mayor a 0");
