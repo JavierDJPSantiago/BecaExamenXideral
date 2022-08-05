@@ -3,7 +3,7 @@ package carroConInterfaceExamen1;
 public class Seleccion {
 
 	//Switch para la elección del objeto con base a la entrada del cliente
-	public static Vehiculo varios (int i) {
+	public static Vehiculo elegirVehiculo (int i) {
 		switch(i) {
 		case 1: 
 			return new Carro();

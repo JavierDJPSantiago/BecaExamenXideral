@@ -2,7 +2,7 @@ package carroConInterfaceExamen1;
 
 public class Avion implements Vehiculo {
 	
-
+	
 	@Override
 	public String moverse() {
 		return "Me muevo por aire";

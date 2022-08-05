@@ -9,22 +9,24 @@ public class Principal {
 	
 	public static void main(String[] args) {
 
-		//Instancia de objeto scanner para recibir información por consola
-		Scanner cliente = new Scanner (System.in);	
+		//Instancia de objeto scanner para recibir información por consola del cliente
+		Scanner eleccionVehiculoYAceleracion = new Scanner (System.in);	
 		
 		System.out.println("Introduzca un número del 1 al 3 por favor");
 		
 		//variable de tipo int para la elección del vehiculo
-		int numeroVehiculo = cliente.nextInt();
+		int numeroVehiculo = eleccionVehiculoYAceleracion.nextInt();
 		
 		System.out.println("¿Cuantos km quiere que acelere?");
 		
 		//Variable que contiene el valor de la aceleración
-		aceleracion = cliente.nextInt();
-		cliente.close();
+		aceleracion = eleccionVehiculoYAceleracion.nextInt();
+
+		//Cerrado del escaner
+		eleccionVehiculoYAceleracion.close();
 		
-		//Llamada al metodo varios de la clase selección
-		Vehiculo vehiculo = Seleccion.varios(numeroVehiculo);
+		//Llamada al metodo elegirVehiculo de la clase selección
+		Vehiculo vehiculo = Seleccion.elegirVehiculo(numeroVehiculo);
 		
 		//Llamada al metodo datos
 		datos(vehiculo);
