@@ -14,7 +14,7 @@ public class LeafHoja implements ComponentDocumento{
 	//Objetos referenciados por esta clase no pueden ser añadidos
 	@Override
 	public void añadir(ComponentDocumento componentDocumento) {
-        System.out.println("no se puede agregar la hoja");
+        System.out.println("No se puede agregar la hoja");
 		
 	}
 	
